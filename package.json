@@ -1,0 +1,42 @@
+{
+  "name": "@svelte-react-vue-angular-spa/log-cw",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port 5001",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "serve:standalone": "vue-cli-service serve --mode standalone"
+  },
+  "dependencies": {
+    "autoprefixer": "^10",
+    "core-js": "^3.8.3",
+    "devextreme": "21.2.7",
+    "devextreme-vue": "21.2.7",
+    "postcss": "^8",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "single-spa-vue": "^2.1.0",
+    "tailwindcss": "^3",
+    "vue": "^3.2.13",
+    "vue-class-component": "^8.0.0-rc.1",
+    "vue-property-decorator": "^10.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "tailwind-bootstrap-grid": "^5.0.1",
+    "typescript": "~4.5.5",
+    "vue-cli-plugin-single-spa": "~3.3.0",
+    "vue-cli-plugin-tailwind": "~3.0.0"
+  }
+}

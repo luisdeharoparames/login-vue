@@ -1,0 +1,68 @@
+<div class="login-page h-full gradient-form bg-gray-200 md:h-screen">
+  <div class="container py-12 px-6 h-full">
+    <div
+      class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
+      <div class="xl:w-12/10 z-10">
+        <div class="block bg-white shadow-lg rounded-lg">
+          <div class="lg:flex lg:flex-wrap g-0 bg-[#FFF]">
+            <div class="md:p-12 md:mx-6">
+              <div class="text-center">
+                <img
+                  @click="routeTo('/landing')"
+                  alt="reactic platform"
+                  class="mx-auto w-48 pb-6"
+                  src="../assets/logo.png" />
+              </div>
+              <form>
+                <p class="mb-4">Please login to your account</p>
+                <div class="mb-4">
+                  <ntt-text-box
+                    :placeholder="'username'"
+                     />
+                </div>
+                <div class="mb-4">
+                  <ntt-text-box
+                    @keyup.enter="login()"
+                    :mode="'password'"
+                    :placeholder="'password'"
+                     />
+                </div>
+                <div class="text-center pt-1 mb-12 pb-1">
+                  <ntt-button
+                    class="inline-block px-6  font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
+                    text="Log in"
+                    type="success"
+                    styling-mode="outlined"
+                    ></ntt-button>
+
+                  <a class="text-gray-500" href="#!">Forgot password?</a>
+                </div>
+                <div class="flex items-center justify-between pb-6">
+                  <p class="mb-0 mr-2">Don't have an account?</p>
+                  <button
+                    type="button"
+                    class="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                    data-mdb-ripple="true"
+                    data-mdb-ripple-color="light">
+                    Create account
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  :class="`absolute z-0 ${innerWidth > 1280 ? 'bubble-wrapper' : 'bubble-wrapper-sm'}`">
+  <div ref="bubble" class="bubble">
+    <!-- <img class="bubble-image" src="../../../assets/tree-login.svg" width="850" height="755"/> -->
+
+    <div id="component">
+      <svg-tree-login class="bubble-image" />
+    </div>
+  </div>
+  <div ref="bubblePulse" class="bubble-pulse"></div>
+</div>

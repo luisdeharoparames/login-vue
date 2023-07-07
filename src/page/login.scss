@@ -1,0 +1,25 @@
+.login-page {
+  background: radial-gradient(
+    circle closest-side,
+    #fff 80%,
+    #f8f8f8 100%
+  ) !important;
+}
+
+.bubble-wrapper {
+  position: absolute;
+  right: 250px;
+  top: 50px;
+}
+
+.bubble-wrapper-sm {
+  position: absolute;
+  right: 250px;
+  top: -320px;
+}
+
+.dx-button-mode-outlined.dx-button-success {
+  background-color: transparent;
+  border-color: #4cae4c;
+  color: #4cae4c;
+}
